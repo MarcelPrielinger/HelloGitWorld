@@ -11,15 +11,21 @@ public class Main
             Scanner scanner = new Scanner(System.in);
             int no_1;
             int no_2;
+            String opp;
 
             System.out.printf("Geben Sie bitte einen Werte ein: ");
             no_1 = scanner.nextInt();
             System.out.printf("Geben Sie noch einen Wert an: ");
             no_2 = scanner.nextInt();
+            System.out.printf("Bitte geben Sie eine Rechenopperation an:");
+            opp = scanner.next();
 
-            int result = no_1 + no_2;
 
-            System.out.println("Ihr Ergebnis ist: " + result);
+            System.out.printf("Ihr Ergebnis ist: ");
+            if(opp.equals("+"))
+            {
+                System.out.printf("%d", no_1 + no_2);
+            }
         }
         catch (Exception ex)
         {
