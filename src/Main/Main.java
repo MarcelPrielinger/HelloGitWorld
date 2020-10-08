@@ -31,6 +31,10 @@ public class Main
             {
                 System.out.printf("%d",no_1 - no_2);
             }
+            else if (opp.equals("*"))
+            {
+                System.out.printf("%d",no_1 * no_2);
+            }
         }
         catch (Exception ex)
         {
